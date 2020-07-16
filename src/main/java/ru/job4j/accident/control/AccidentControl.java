@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import ru.job4j.accident.model.Accident;
-import ru.job4j.accident.repository.AccidentMem;
+import ru.job4j.accident.repository.AccidentJdbcTemplate;
 
 @Controller
 public class AccidentControl {
 
-    private final AccidentMem accidents;
+    private final AccidentJdbcTemplate accidents;
 
-    public AccidentControl(AccidentMem accidents) {
+    public AccidentControl(AccidentJdbcTemplate accidents) {
         this.accidents = accidents;
     }
 
