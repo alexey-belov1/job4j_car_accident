@@ -20,6 +20,9 @@
                     <a class="nav-link" href="<c:url value='/create'/>">Добавить инцидент</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#">${user.username}</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="<c:url value='/logout'/>">Выйти</a>
                 </li>
             </ul>
